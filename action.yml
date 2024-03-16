@@ -23,7 +23,7 @@ runs:
     - name: Sign kernel
       shell: bash
       run: |
-        CONTAINER_ID=$(docker run --entrypoint /bin/bash --replace --name "${{ inputs.image }}" -dt "${{ inputs.image }}")
+        CONTAINER_ID=$(docker run --entrypoint /bin/bash --name "${{ inputs.image }}" -dt "${{ inputs.image }}")
         docker cp "${{ github.action_path }}"/sign-kernel.sh "${{ inputs.image }}":/tmp/sign-kernel.sh
         docker cp "${{ github.action_path }}"/kernel_options.txt "${{ inputs.image }}":/tmp/kernel_options.txt
         docker exec -e PRIVKEY="${{ inputs.privkey }}" -e PUBKEY="${{ inputs.pubkey }}" "${{ inputs.image }}" "/tmp/sign-kernel.sh"
