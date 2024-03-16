@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.4](https://github.com/atomic-studio-org/kernel-signer-docker/compare/v0.1.3...v0.1.4) (2024-03-16)
+
+
+### Bug Fixes
+
+* replace does not exist in docker ([20f834d](https://github.com/atomic-studio-org/kernel-signer-docker/commit/20f834d5dad86174ed5538648d7c9ee2eb5ef3c1))
+* separate name for container and image itself ([9f9b373](https://github.com/atomic-studio-org/kernel-signer-docker/commit/9f9b37396e03ee4fb310958fca353744307c18b4))
+
 ## [0.1.3](https://github.com/atomic-studio-org/kernel-signer-docker/compare/v0.1.3...v0.1.3) (2024-03-16)
 
 
