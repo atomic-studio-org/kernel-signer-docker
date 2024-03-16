@@ -16,7 +16,7 @@ jobs:
     name: Sign kernel inside container
     steps:
       - name: Sign kernel
-        uses: EyeCantCU/kernel-signer@v0.1.0
+        uses: atomic-studio-org/kernel-signer-docker@v0.1.0
         with:
           image: kernel-signer-test
           privkey: /path/to/privkey
