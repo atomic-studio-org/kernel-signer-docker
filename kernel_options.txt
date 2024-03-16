@@ -3,3 +3,5 @@ cachyos
 cachyos-lts
 cachyos-rt
 lqx
+tkg
+fsync
